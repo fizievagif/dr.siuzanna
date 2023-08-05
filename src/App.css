@@ -1,9 +1,4 @@
 @font-face {
-  font-family: coolvetica;
-  src: url("../public/fonts/coolvetica.otf");
-}
-
-@font-face {
   font-family: pfregal;
   src: url("../public/fonts/PFRegalDisplayPro-Regular.ttf");
 }
@@ -75,10 +70,8 @@
 }
 
 .main-title {
-  font-family: coolvetica, serif;
   color: #000;
   font-size: 43px;
-  font-weight: 500;
   margin-top: 45px;
 }
 
@@ -88,22 +81,25 @@
   margin-top: 45px;
 }
 
-.clinic-btn {
+.btn {
   color: white;
   background: #d0b875;
-  font-size: 30px;
-  border-radius: 28px;
-  border: none;
-  padding: 40px 40px;
   font-weight: bold;
+  border: none;
+  border-radius: 28px;
 }
 
-.clinic-btn:hover {
+.clinic-btn {
+  font-size: 30px;
+  padding: 40px 40px;
+}
+
+.btn:hover {
   cursor: pointer;
   background: #b9a56a;
 }
 
-.clinic-btn:active {
+.btn:active {
   background: #ab9861;
 }
 
@@ -153,3 +149,343 @@
   background-position: bottom;
   background-size: 42%;
 }
+
+.second-block {
+  margin-top: 100px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.centre-title {
+  max-width: 550px;
+  margin-top: 0;
+}
+
+.second-img-block img{
+  width: 580px;
+  height: 390px;
+  border-radius: 30px;
+}
+
+
+
+.third-block {
+  margin-top: 50px;
+}
+
+.title {
+  color: #000;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.title span {
+  color: #d0b875;
+}
+
+.third-block-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 32%;
+  background: #ebe2ce;
+  border-radius: 30px;
+  padding: 10px 25px;
+  font-size: 20px;
+}
+
+.fourth-block {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.procedure-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.procedure-box {
+  background: white;
+  padding: 25px 35px;
+  border-radius: 50px;
+  box-shadow: 4px 6px 0 -2px rgba(142, 142, 142, 0.2);
+}
+
+.procedure-boxes button {
+  outline: none;
+  border: none;
+}
+
+.procedure-box1 {
+  background: #ebe2ce;
+}
+
+.procedure-box:hover {
+  background: #fff7e0;
+  cursor: pointer;
+}
+
+.procedure-box:active {
+  background: #ebe2ce;
+}
+
+.fourth-inner-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fourth-inner-img img{
+  width: 500px;
+  height: 450px;
+  border-top-right-radius: 70px;
+  border-bottom-left-radius: 70px;
+}
+
+.fourth-inner-box {
+  display: flex;
+  flex-direction: column;
+  margin-left: 9%;
+  font-size: 20px;
+}
+
+.fourth-inner-text1 {
+  margin: 0 0 25px;
+}
+
+.fourth-inner-text2 {
+  max-width: 550px;
+}
+
+.fourth-table-boxes {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.fourth-table-box {
+  display: flex;
+  justify-content: space-between;
+  background: #ebe2ce;
+  padding: 5px 13px;
+}
+
+.fourth-table-box2 {
+  background: white;
+}
+
+.btn-block {
+  margin: auto auto 0;
+}
+
+.procedure-btn {
+  font-size: 25px;
+  padding: 33px 37px;
+}
+
+.fifth-block {
+  margin-bottom: 100px;
+}
+
+.app-box {
+  width: 200px;
+  text-align: center;
+}
+
+.app-btn {
+  align-self: center;
+  border-radius: 50%;
+  border: none;
+  font-size: 40px;
+  color: white;
+  background: #ebe2ce;
+  width: 55px;
+  height: 55px;
+  font-weight: normal;
+}
+
+.app-inner-boxes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.app-inner-box {
+  background: rgba(142, 142, 142, 0.2);
+  border-top-right-radius: 78px;
+  border-bottom-left-radius: 78px;
+}
+
+.app-inner-box img {
+  height: 380px;
+  width: 230px;
+}
+
+.sixth-block {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.siuzannaK {
+  font-family: coolvetica, serif;
+  color: #2e2e2d;
+  font-style: italic;
+  font-size: 50px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.doc {
+  font-family: coolvetica, serif;
+  color: #6c6d6f;
+  font-size: 25px;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.doc-text {
+  max-width: 600px;
+  font-size: 20px;
+}
+
+.oval-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.oval-container1 {
+  top: 15%;
+  left: 51.5%;
+}
+
+.oval-container2 {
+  top: 20%;
+  left: 53.5%;
+}
+
+.oval {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70px;
+  height: 250px;
+  background-color: white;
+  border-radius: 80px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Тень для эффекта выступающего блока */
+}
+
+.oval-button {
+  width: 55px;
+  height: 55px;
+  margin: 10px;
+  background-color: white;
+  border: 3px solid #d0b875;
+  border-radius: 50%;
+}
+
+.oval-button:first-child {
+  margin-top: 20px;
+}
+
+.oval-button-img {
+  background: url("./images/siuzanna.jpg") 50% no-repeat;
+  background-size: 140%;
+}
+
+.oval-button:hover {
+  cursor: pointer;
+}
+
+.team-title {
+  margin-top: 0;
+}
+
+.sixth-img-block img {
+  width: 550px;
+  height: 450px;
+  border-radius: 30px;
+}
+
+.seventh-block {
+  font-size: 20px;
+  margin-bottom: 100px;
+}
+
+.seventh-inner-boxes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.seventh-inner-img {
+  margin-right: 30px;
+}
+
+.seventh-inner-img img {
+  width: 700px;
+  height: 470px;
+  border-radius: 30px;
+}
+
+.drsiuzanna-title {
+  margin-top: 0;
+  line-height: 0.7;
+  font-family: pfregal, serif;
+  color: #d0b875;
+  font-size: 40px;
+}
+
+.seventh-links-block {
+  margin-top: 70px;
+  justify-content: start;
+}
+
+.insta1 {
+ margin-left: 35px;
+}
+
+.footer {
+  padding: 40px 0;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  background: #e9e2ce;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-container a {
+  text-decoration: none;
+}
+
+.footer-container a:hover {
+  color: #d0b875;
+}
+
+.footer-container a:active {
+  color: #ab9861;
+}
+
+.footer-logo {
+  width: 200px;
+  height: 200px;
+}
+
+

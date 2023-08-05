@@ -3,18 +3,29 @@
   src: url("../public/fonts/HelveticaWorld-Regular.ttf");
 }
 
+@font-face {
+  font-family: coolvetica;
+  src: url("../public/fonts/coolvetica.otf");
+}
+
+
 body {
   font-family: helvetica, serif;
   font-size: 15px;
   margin: 0;
   color: #686868;
-  background: #fff;
+  background: #f1f1f3;
   line-height: 1.1;
   min-width: 480px;
 }
 
 *, *::before, *::after {
   box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  font-family: coolvetica, serif;
+  font-weight: 500;
 }
 
 img, iframe {
