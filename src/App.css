@@ -1,1 +1,155 @@
+@font-face {
+  font-family: coolvetica;
+  src: url("../public/fonts/coolvetica.otf");
+}
 
+@font-face {
+  font-family: pfregal;
+  src: url("../public/fonts/PFRegalDisplayPro-Regular.ttf");
+}
+
+.main-pic-block {
+  padding: 40px 0 20px;
+  background: url(./images/main-pic.jpg) top left no-repeat;
+  background-size: cover;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  margin-right: 4%;
+}
+
+.main-nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.main-nav li {
+  margin-right: 20px;
+}
+
+.main-nav a{
+  margin-bottom: 12px;
+  text-decoration: none;
+}
+
+.main-nav a:hover {
+  color: #d0b875;
+}
+
+.main-nav a:active {
+  color: #ab9861;
+}
+
+.main-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+
+.clinic-main-text {
+  font-size: 27px;
+  margin-bottom: 0;
+}
+
+.siuzanna-text {
+  font-family: pfregal, serif;
+  color: #d0b875;
+  font-size: 65px;
+  margin: 0;
+}
+
+.main-title {
+  font-family: coolvetica, serif;
+  color: #000;
+  font-size: 43px;
+  font-weight: 500;
+  margin-top: 45px;
+}
+
+.clinic-text {
+  font-size: 23px;
+  max-width: 400px;
+  margin-top: 45px;
+}
+
+.clinic-btn {
+  color: white;
+  background: #d0b875;
+  font-size: 30px;
+  border-radius: 28px;
+  border: none;
+  padding: 40px 40px;
+  font-weight: bold;
+}
+
+.clinic-btn:hover {
+  cursor: pointer;
+  background: #b9a56a;
+}
+
+.clinic-btn:active {
+  background: #ab9861;
+}
+
+.main-second-block {
+  margin-top: 150px;
+  align-self: flex-end;
+  color: #525252;
+}
+
+.second-block-number {
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
+.second-block-worktime {
+  margin-top: 5px;
+  font-size: 10px;
+  text-align: right;
+}
+
+.main-second-links-block {
+  display: flex;
+  justify-content: end;
+}
+
+.main-second-links-block a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  white-space: nowrap;
+  text-indent: 35px;
+  overflow: hidden;
+  margin-right: 5px;
+  background-color: #d0b875;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+.insta {
+  background-image: url('./images/instagram.png');
+  background-position: center;
+  background-size: 18px;
+}
+
+.face {
+  background-image: url('./images/facebook.png');
+  background-position: bottom;
+  background-size: 42%;
+}

@@ -1,1 +1,28 @@
+@font-face {
+  font-family: helvetica;
+  src: url("../public/fonts/HelveticaWorld-Regular.ttf");
+}
 
+body {
+  font-family: helvetica, serif;
+  font-size: 15px;
+  margin: 0;
+  color: #686868;
+  background: #fff;
+  line-height: 1.1;
+  min-width: 480px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+img, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+a, button {
+  color: inherit;
+  font-size: inherit;
+}
