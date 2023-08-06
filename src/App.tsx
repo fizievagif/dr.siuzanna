@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import logo from './images/logo.svg';
 import laser from './images/laser2.png';
@@ -10,9 +10,24 @@ import pic5 from './images/pic5.png';
 import map from './images/map.jpg';
 import siuzanna from './images/siuzanna.jpg';
 import secondPic from './images/second-pic.jpg';
+import AppointmentForm from "./Component/AppointmentForm/AppointmentForm";
 
 
 function App() {
+  const [showAppointmentForm, setShowAppointmentForm] = useState(false);
+
+  const winScroll = (number: number) => {
+    window.scrollTo({
+      top: number,
+      behavior: "smooth"
+    });
+  }
+
+  const toggleAppointmentForm = () => {
+    setShowAppointmentForm(!showAppointmentForm);
+    winScroll(0);
+  };
+
   return (
     <div>
       <div className='main-pic-block'>
@@ -24,23 +39,29 @@ function App() {
 
             <nav className='main-nav'>
               <ul>
-                <li><a href="#">Почему мы</a></li>
-                <li><a href="#">Наши процедуры</a></li>
-                <li><a href="#">Новейшие аппараты</a></li>
-                <li><a href="#">Моя команда</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="#" onClick={() => winScroll(1200)}>Почему мы</a></li>
+                <li><a href="#" onClick={() => winScroll(1750)}>Наши процедуры</a></li>
+                <li><a href="#" onClick={() => winScroll(2500)}>Новейшие аппараты</a></li>
+                <li><a href="#" onClick={() => winScroll(3000)}>Моя команда</a></li>
+                <li><a href="#" onClick={() => winScroll(3700)}>Контакты</a></li>
               </ul>
             </nav>
           </header>
 
           <div className='main-block'>
-            <div className='main-first-block'>
-              <p className='clinic-main-text'>Косметологическая клиника</p>
-              <p className='siuzanna-text'>Dr. Siuzanna Casparean</p>
-              <h2 className='main-title'>Красота не требует жертв</h2>
-              <p className='clinic-text'>Запишись и получи бесплатную консультацию нашего косметолога</p>
-              <button className='clinic-btn btn'>Записаться онлайн</button>
-            </div>
+            {showAppointmentForm ? (
+              <AppointmentForm toggleForm={toggleAppointmentForm} />
+            ) : (
+              <div className='main-first-block'>
+                <p className='clinic-main-text'>Косметологическая клиника</p>
+                <p className='siuzanna-text'>Dr. Siuzanna Casparean</p>
+                <h2 className='main-title'>Красота не требует жертв</h2>
+                <p className='clinic-text'>Запишись и получи бесплатную консультацию нашего косметолога</p>
+                <button className='clinic-btn btn' onClick={toggleAppointmentForm}>
+                  Записаться онлайн
+                </button>
+              </div>
+            )}
 
             <div className='main-second-block'>
               <p className='second-block-number'>(+373) 68 884 443</p>
@@ -141,7 +162,7 @@ function App() {
                 </div>
               </div>
               <div className='btn-block'>
-                <button className='btn procedure-btn'>Записаться онлайн</button>
+                <button className='btn procedure-btn' onClick={toggleAppointmentForm}>Записаться онлайн</button>
               </div>
             </div>
           </div>
